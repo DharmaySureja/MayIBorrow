@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_my_view_post"
+        android:name="com.csci5708.maylborrow.ui.post.ViewMyPostFragment"
+        android:label="@string/my_post"
+        tools:layout="@layout/fragment_my_view_post" >
+        <action
+            android:id="@+id/action_navigation_my_view_post_to_navigation_edit_post"
+            app:destination="@id/navigation_edit_post" />
+        <action
+            android:id="@+id/action_navigation_my_view_post_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_view_post"
+        android:name="com.csci5708.maylborrow.ui.post.ViewPostFragment"
+        android:label="@string/view_post"
+        tools:layout="@layout/fragment_view_post" >
+        <action
+            android:id="@+id/action_navigation_view_post_to_navigation_wishlist"
+            app:destination="@id/navigation_wishlist" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.csci5708.maylborrow.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_view_post"
+            app:destination="@id/navigation_view_post"
+            app:popUpTo="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.csci5708.maylborrow.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_view_post"
+            app:destination="@id/navigation_view_post" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_edit_post"
+            app:destination="@id/navigation_edit_post" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_my_view_post"
+            app:destination="@id/navigation_my_view_post" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigationRequestDetail"-->
+<!--        android:name="com.csci5708.maylborrow.ui.notifications.NotificationsFragment"-->
+<!--        android:label="@string/title_notifications"-->
+<!--        tools:layout="@layout/fragment_notifications" />-->
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.csci5708.maylborrow.ui.userprofile.UserProfile"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigate_edit_user_profile"
+            app:destination="@id/navigate_edit_user_profile" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigate_edit_user_profile"
+        android:name="com.csci5708.maylborrow.ui.userprofile.EditUserProfile"
+        tools:layout="@layout/fragment_userprofile_edit" >
+        <action
+            android:id="@+id/action_navigate_edit_user_profile_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationRequestDetail"
+        android:name="com.csci5708.maylborrow.ui.requestUserDetail.fragment.RequestDetail"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_request_detail" />
+
+
+    <fragment
+        android:id="@+id/navigation_wishlist"
+        android:name="com.csci5708.maylborrow.ui.wishlist.WishlistFragment"
+        android:label="@string/wishlist"
+        tools:layout="@layout/fragment_wishlist" >
+        <action
+            android:id="@+id/action_navigation_wishlist_to_navigation_view_post"
+            app:destination="@id/navigation_view_post" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_edit_post"
+        android:name="com.csci5708.maylborrow.ui.post.EditPostFragment"
+        android:label="@string/add_post"
+        tools:layout="@layout/fragment_edit_post" >
+        <action
+            android:id="@+id/action_navigation_edit_post_to_navigation_view_post"
+            app:destination="@id/navigation_my_view_post" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="145dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="10dp"
+    android:layout_marginStart="20dp"
+    android:textAlignment="center"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:background="@drawable/shape">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:layout_margin="6dp"
+            >
+
+            <ImageView
+                android:id="@+id/ProductImage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/shape"
+                android:layout_margin="1dp"
+                ></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Product Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            >
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="serif-monospace"
+            android:text="Product Price"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

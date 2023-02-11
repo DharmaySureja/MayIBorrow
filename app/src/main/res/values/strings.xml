@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MaylBorrow</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">My Listings</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_request_user_detail">RequestUserDetail</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="large_text">Text</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_post">Add Post</string>
+    <string name="view_post">View Post</string>
+    <string name="wishlist">Wishlist</string>
+
+
+    <string-array name="SortBy">
+        <item>Sort by:</item>
+        <item>Name</item>
+        <item>Price</item>
+    </string-array>
+    <string name="my_post">My Post</string>
+    <!-- List of condition of items -->
+    <string name="choose_condition">Choose Condition</string>
+    <string name="poor">Poor</string>
+    <string name="fair">Fair</string>
+    <string name="good">Good</string>
+    <string name="like_new">Add Post</string>
+    <string name="_new">New</string>
+
+
+</resources>
